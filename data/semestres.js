@@ -3,43 +3,44 @@
 export const fimDoSemestre =
   process.env.NEXT_PUBLIC_SEMESTER_END || "2026-12-18T23:59:59-03:00";
 
-// Timeline: edite os textos e troque as fotos em /public/semestres
-// (basta colocar o arquivo lá e mudar o campo "foto").
+// Timeline do curso de Análise e Desenvolvimento de Sistemas (ADS).
+// Os projetos abaixo são exemplos: troque os textos e as fotos em /public/semestres
+// (coloque o arquivo lá e mude o campo "foto").
 export const semestres = [
   {
     semestre: 1,
     periodo: "2025.1",
-    titulo: "Lógica de Programação e Páginas Web",
+    titulo: "Calculadora de IMC e Jogo de Adivinhação",
     descricao:
-      "Primeiros algoritmos em Python e a primeira página pessoal em HTML e CSS, com foco em lógica e estrutura básica.",
-    tecnologias: ["Python", "HTML", "CSS"],
+      "Primeiros programas em Python no terminal, usando lógica de programação, variáveis, condicionais e laços de repetição.",
+    tecnologias: ["Python", "Algoritmos", "Lógica"],
     foto: "/semestres/semestre-1.svg",
   },
   {
     semestre: 2,
     periodo: "2025.2",
-    titulo: "Interfaces Interativas",
+    titulo: "Sistema de Biblioteca",
     descricao:
-      "Site responsivo com JavaScript, consumo de uma API pública e trabalho em equipe usando Git e GitHub.",
-    tecnologias: ["JavaScript", "Git", "API REST"],
+      "Cadastro de livros e usuários com empréstimo e devolução, aplicando orientação a objetos, classes e herança, com diagramas UML.",
+    tecnologias: ["Java", "POO", "UML"],
     foto: "/semestres/semestre-2.svg",
   },
   {
     semestre: 3,
     periodo: "2026.1",
-    titulo: "Banco de Dados e Back-end",
+    titulo: "Sistema de Controle de Estoque",
     descricao:
-      "Modelagem de dados, SQL e uma API com CRUD completo para um sistema de cadastro.",
-    tecnologias: ["SQL", "Node.js", "Express"],
+      "Modelagem do banco de dados (MER), consultas SQL e uma aplicação com CRUD completo de produtos e fornecedores.",
+    tecnologias: ["MySQL", "SQL", "Modelagem de dados"],
     foto: "/semestres/semestre-3.svg",
   },
   {
     semestre: 4,
     periodo: "2026.2",
-    titulo: "Aplicação Full Stack com Next.js",
+    titulo: "Site com Contagem Regressiva do Semestre",
     descricao:
-      "Projeto integrando front-end e back-end, com deploy na Vercel e o relógio de contagem regressiva desta página.",
-    tecnologias: ["Next.js", "React", "Vercel"],
+      "Aplicação web em Next.js com relógio digital em tempo real e esta timeline, versionada no GitHub e publicada na Vercel.",
+    tecnologias: ["Next.js", "React", "Git/GitHub", "Vercel"],
     foto: "/semestres/semestre-4.svg",
   },
 ];
